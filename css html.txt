@@ -1,0 +1,31 @@
+<style>
+    /* Apply RTL layout to the whole Jira interface */
+    body, .aui, .jira-page, .jira-portal, .portal-page, .jira-issue {
+        direction: rtl !important;
+        text-align: right !important;
+    }
+
+    /* Move the main navigation menu to the right */
+    #header, #navigation, .aui-header, .aui-navgroup {
+        direction: rtl !important;
+        text-align: right !important;
+    }
+
+    /* Adjustments for specific elements */
+    .aui-page-header-inner, .aui-navgroup-inner, .aui-navgroup-horizontal {
+        float: right !important;
+    }
+
+    /* Aligning other important content areas */
+    .aui-page-panel-content, .aui-page-panel-sidebar, .jira-issue-header-content, .jira-issue-main-column, .jira-issue-sidebar {
+        direction: rtl !important;
+        text-align: right !important;
+    }
+    
+    /* Adjust the header to display elements from right to left */
+    .aui-header-logo, .aui-header-primary, .aui-header-secondary {
+        float: right !important;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+</style>
